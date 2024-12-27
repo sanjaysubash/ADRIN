@@ -1,0 +1,98 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Styles */
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Profile Container */
+.profile-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 400px;
+    text-align: center;
+}
+
+/* Profile Header */
+.profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile-header .profile-picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #00adb5;
+    object-fit: cover;
+}
+
+.profile-header .user-info h1 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.profile-header .user-info p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Edit Profile Button */
+.profile-header button {
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    background-color: #00adb5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.profile-header button:hover {
+    background-color: #008b93;
+    transform: scale(1.05);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .profile-container {
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    .profile-header .profile-picture {
+        width: 100px;
+        height: 100px;
+    }
+
+    .profile-header .user-info h1 {
+        font-size: 1.5rem;
+    }
+
+    .profile-header .user-info p {
+        font-size: 0.9rem;
+    }
+
+    .profile-header button {
+        font-size: 0.9rem;
+        padding: 0.7rem 1.2rem;
+    }
+}

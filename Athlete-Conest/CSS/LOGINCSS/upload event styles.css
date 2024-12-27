@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ff4500; /* Sports color */
+    color: #fff;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header .right-options {
+    display: flex;
+    gap: 20px;
+}
+
+header .right-options .option {
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+header .right-options .option:hover {
+    background-color: #ff6347; /* Darker sports color */
+}
+
+main {
+    padding: 20px;
+}
+
+.top-news, .events, .upload-event {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.top-news h1, .events h1, .upload-event h1 {
+    color: #ff4500; /* Sports color */
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+article h2 {
+    color: #333;
+}
+
+article p {
+    color: #666;
+}
+
+.upload-event form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.upload-event .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.upload-event .form-group label {
+    font-weight: bold;
+}
+
+.upload-event .form-group input,
+.upload-event .form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.upload-event button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff4500; /* Sports color */
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.upload-event button:hover {
+    background-color: #ff6347; /* Darker sports color */
+}

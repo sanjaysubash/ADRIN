@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Event</title>
+    <link rel="stylesheet" href="../CSS/uploadevent.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../ASSETS/ADRIN_transparent.png" alt="Logo">
+        </div>
+        <nav>
+            <a href="/Athlete-Conest/HTML/home.html" class="option">Home</a>
+            <a href="/Athlete-Conest/HTML/events.html" class="option">Events</a>
+            <a href="/Athlete-Conest/HTML/upload-event.html" class="option">Upload Event</a>
+            <a href="/Athlete-Conest/HTML/profilepage.html" class="option"><button>profile</button></a>
+        </nav>
+    </header>
+    <main>
+        <section class="upload-event">
+            <h1>Upload Event</h1>
+            <form id="uploadEventForm" enctype="multipart/form-data">
+                <label for="eventTitle">Event Title:</label>
+                <input type="text" id="eventTitle" name="title" required>
+                
+                <label for="eventDescription">Event Description:</label>
+                <textarea id="eventDescription" name="description" required></textarea>
+                
+                <label for="eventLocation">Event Location:</label>
+                <input type="text" id="eventLocation" name="location" required>
+                
+                <label for="eventDate">Event Date:</label>
+                <input type="date" id="eventDate" name="date" required>
+                
+                <label for="eventContactDetails">Event Contact Details:</label>
+                <input type="text" id="eventContactDetails" name="contactDetails" required>
+                
+                <label for="eventPhotos">Upload Photos:</label>
+                <input type="file" id="eventPhotos" name="photos" multiple accept="image/*">
+                
+                <label for="eventVideos">Upload Videos:</label>
+                <input type="file" id="eventVideos" name="videos" multiple accept="video/*">
+                
+                <button type="submit">Upload</button>
+            </form>
+        </section>
+    </main>
+    <script src="../JS/uploadevent.js"></script> <!-- Updated path -->
+</body>
+</html>

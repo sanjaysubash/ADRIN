@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ff4500; /* Sports color */
+    color: #fff;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header .right-options {
+    display: flex;
+    gap: 20px;
+}
+
+header .right-options .option {
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+header .right-options .option:hover {
+    background-color: #ff6347; /* Darker sports color */
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px);
+}
+
+.login-wrapper {
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.login-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-card h2 {
+    margin-bottom: 20px;
+    color: #ff4500; /* Sports color */
+}
+
+.login-card form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-card form input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.login-card form button {
+    padding: 10px;
+    background-color: #ff4500; /* Sports color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-card form button:hover {
+    background-color: #ff6347; /* Darker sports color */
+}
+
+.login-card a {
+    color: #ff4500;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: color 0.3s;
+}
+
+.login-card a:hover {
+    color: #ff6347;
+}
+
+.login-card p {
+    margin-top: 20px;
+}

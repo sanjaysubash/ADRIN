@@ -1,0 +1,76 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #4a90e2, #9013fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+}
+
+/* Container Styling */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Login Card Styling */
+.login-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    width: 100%;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.login-card h2 {
+    font-size: 24px;
+    margin-bottom: 1.5rem;
+    color: #fff;
+}
+
+/* Link Styling */
+.login-card a {
+    display: block;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    background-color: #4a90e2;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover and Active Styles */
+.login-card a:hover {
+    background-color: #9013fe;
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.login-card a:active {
+    transform: translateY(1px);
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
