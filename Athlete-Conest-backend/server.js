@@ -34,10 +34,7 @@ app.use('/uploads', express.static(path.resolve(__dirname, '../Athlete-Conest/up
 // MongoDB connection using async/await
 (async () => {
   try {
-    await mongoose.connect(process.env.MONGODB_URI, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
+    await mongoose.connect(process.env.MONGODB_URI, );
     console.log('Connected to MongoDB');
   } catch (error) {
     console.error('MongoDB connection error:', error);
